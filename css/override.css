@@ -1,23 +1,34 @@
+/* Hacking Theme: Horizontal Rule */
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid #0f0; /* Neon green line */
+  opacity: 0.5;
 }
 
 /* Post navigation links */
 .post_navi {
   display: flex;
+  justify-content: space-between; /* Ensure space between Previous and Next */
+  align-items: center;
+  color: #00ff00; /* Neon green text */
+  font-family: "Courier New", monospace; /* Terminal-like font */
 }
 
 .post_navi-label {
   font-size: 0.8em;
-  opacity: 0.5;
+  opacity: 0.7;
+  color: #00ff00;
 }
 
+/* Styling Previous/Next Navigation Items */
 .post_navi .post_navi-item {
   padding: 0 2.2em;
   width: 50%;
   position: relative;
-  color: inherit !important;
+  text-decoration: none;
+  color: inherit !important; /* Inherit green color */
 }
 
 .post_navi .nav_prev {
@@ -28,18 +39,37 @@ hr {
   text-align: right;
 }
 
-.post_navi .nav_prev .post_navi-arrow {
-  left: 0;
-}
-
-.post_navi .nav_next .post_navi-arrow {
-  right: 0;
-}
-
+/* Arrow Styling */
 .post_navi .post_navi-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2.5em;
-  opacity: 0.3;
+  opacity: 0.7;
+  color: #00ff00;
+  text-shadow: 0px 0px 8px #00ff00; /* Glow effect */
+}
+
+.post_navi .nav_prev .post_navi-arrow {
+  left: 0;
+  content: "⮜"; /* ASCII-style arrow for a hacking look */
+}
+
+.post_navi .nav_next .post_navi-arrow {
+  right: 0;
+  content: "⮞"; /* ASCII-style arrow for a hacking look */
+}
+
+/* Add Glow Animation */
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 8px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+  50% {
+    text-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00, 0 0 40px #00ff00;
+  }
+}
+
+.post_navi-item:hover {
+  animation: glow 1.5s infinite;
 }
