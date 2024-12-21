@@ -1,40 +1,36 @@
-/*
-
-Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
-
-*/
-
+/* Base container styling */
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #F0F0F0;
+  background: #000; /* Black background for terminal look */
+  color: #0f0; /* Neon green for general text */
 }
 
-
-/* Base color: saturation 0; */
-
+/* Base color for plain text */
 .hljs,
 .hljs-subst {
-  color: #444;
+  color: #0f0; /* Neon green */
 }
 
+/* Comments - Muted green */
 .hljs-comment {
-  color: #888888;
+  color: #006400; /* Dark green for comments */
+  font-style: italic;
 }
 
+/* Keywords, attributes, and tags - Bold green */
 .hljs-keyword,
 .hljs-attribute,
 .hljs-selector-tag,
 .hljs-meta-keyword,
 .hljs-doctag,
 .hljs-name {
+  color: #00ff00; /* Bright green */
   font-weight: bold;
 }
 
-
-/* User color: hue: 0 */
-
+/* Strings, numbers, IDs, and classes - Yellow-green */
 .hljs-type,
 .hljs-string,
 .hljs-number,
@@ -43,15 +39,17 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .hljs-quote,
 .hljs-template-tag,
 .hljs-deletion {
-  color: #880000;
+  color: #aaff00; /* Yellow-green */
 }
 
+/* Titles and sections - Cyan */
 .hljs-title,
 .hljs-section {
-  color: #880000;
+  color: #00ffff; /* Cyan */
   font-weight: bold;
 }
 
+/* Regular expressions, symbols, variables - Red */
 .hljs-regexp,
 .hljs-symbol,
 .hljs-variable,
@@ -59,41 +57,38 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .hljs-link,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
-  color: #BC6060;
+  color: #ff5555; /* Light red for contrast */
 }
 
-
-/* Language color: hue: 90; */
-
+/* Literals - Bright green */
 .hljs-literal {
-  color: #78A960;
+  color: #32cd32; /* Lime green */
 }
 
+/* Built-in constructs, bullets, code, additions - Orange */
 .hljs-built_in,
 .hljs-bullet,
 .hljs-code,
 .hljs-addition {
-  color: #397300;
+  color: #ff8800; /* Bright orange */
 }
 
-
-/* Meta color: hue: 200 */
-
+/* Meta tags - Blue */
 .hljs-meta {
-  color: #1f7199;
+  color: #007acc; /* Soft blue for metadata */
 }
 
 .hljs-meta-string {
-  color: #4d99bf;
+  color: #00bfff; /* Sky blue for meta strings */
 }
 
-
-/* Misc effects */
-
+/* Miscellaneous effects */
 .hljs-emphasis {
   font-style: italic;
+  color: #00ff00; /* Emphasized neon green */
 }
 
 .hljs-strong {
   font-weight: bold;
+  color: #00ff00; /* Bold neon green */
 }
