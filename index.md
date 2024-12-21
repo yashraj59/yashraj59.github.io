@@ -3,6 +3,19 @@ layout: default
 title: Home
 ---
 
+
+<div class="post_navi">
+  <a href="previous-post.html" class="post_navi-item nav_prev">
+    <span class="post_navi-arrow">⮜</span>
+    <span>Previous</span>
+  </a>
+  <a href="next-post.html" class="post_navi-item nav_next">
+    <span class="post_navi-arrow">⮞</span>
+    <span>Next</span>
+  </a>
+</div>
+
+
 # Welcome to My Blog
 
 Hi there! I'm **Yash Raj**, a Data Scientist specializing in **Bioinformatics** and **Computational Biology**. With experience in multi-omic data integration, machine learning, and high-throughput genomic analysis, I enjoy unraveling the complexities of biology through computational methods.
