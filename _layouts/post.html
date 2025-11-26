@@ -1,19 +1,43 @@
 ---
 layout: default
 ---
+{%- assign raw_words = page.content | strip_html | replace: "\n", " " | split: " " -%}
+{%- assign filtered_words = raw_words | where_exp: 'item', 'item != ""' -%}
+{%- assign word_count = filtered_words | size -%}
+{%- assign reading_time = word_count | plus: 199 | divided_by: 200 -%}
+
 <article class="essay h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="essay__header">
-    <p class="eyebrow">{{ page.date | date: "%B %d, %Y" }}</p>
+    <div class="essay__kicker">
+      <p class="eyebrow">{{ page.date | date: "%B %d, %Y" }}</p>
+      {%- if page.categories and page.categories.size > 0 -%}
+      <div class="essay__chips">
+        {%- for category in page.categories -%}
+        <span class="chip">{{ category }}</span>
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
+    </div>
     <h1 class="essay__title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <div class="essay__meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- assign author = page.author | default: site.author | default: site.title -%}
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person" class="essay__author">
-        <span class="p-author h-card" itemprop="name">{{ author }}</span>
-      </span>
+      <div>
+        <span class="meta-label">Published</span>
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+      </div>
+      <div>
+        <span class="meta-label">Reading time</span>
+        <span>{{ reading_time }} min</span>
+      </div>
+      <div>
+        <span class="meta-label">Author</span>
+        {%- assign author = page.author | default: site.author | default: site.title -%}
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person" class="essay__author">
+          <span class="p-author h-card" itemprop="name">{{ author }}</span>
+        </span>
+      </div>
     </div>
   </header>
 
