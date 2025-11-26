@@ -1,8 +1,8 @@
 {% assign safeurl = page.url | absolute_url | url_encode %}
 {% assign safetitle = page.title | url_encode %}
-{% assign mail_subject = '[Blog] ' | append: page.title | url_encode %}
+{% assign mail_subject = '[Writing] ' | append: page.title | url_encode %}
 
-<div class="share-inline" role="list">
+<div class="share-list" role="list">
   <a role="listitem" class="share-link" href="https://twitter.com/intent/tweet?url={{ safeurl }}&text={{ safetitle }}&via={{ site.twitter_username }}" target="_blank" rel="noopener">Twitter</a>
   <a role="listitem" class="share-link" href="https://www.linkedin.com/sharing/share-offsite/?url={{ safeurl }}" target="_blank" rel="noopener">LinkedIn</a>
   <a role="listitem" class="share-link" href="mailto:?subject={{ mail_subject }}&body={{ safeurl }}">Email</a>

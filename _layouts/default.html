@@ -1,54 +1,44 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include head.html -%}
-  <body class="site-body">
-    {%- assign tagline = site.description | default: '' | strip -%}
-    {%- if tagline == '' or tagline == '.' -%}
-      {%- assign tagline = 'Notes on AI, art, and the systems I am building.' -%}
-    {%- endif -%}
-
-    <header class="site-header" role="banner">
-      <div class="shell">
-        <div class="brand-block">
-          <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-          <p class="tagline">{{ tagline }}</p>
+  {%- assign tagline = site.description | default: '' | strip -%}
+  {%- if tagline == '' or tagline == '.' -%}
+    {%- assign tagline = 'Writing quietly about AI, art, and the systems I am building.' -%}
+  {%- endif -%}
+  <body class="site-shell">
+    <div class="page-frame">
+      <header class="masthead" role="banner">
+        <div class="masthead__brand">
+          <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <p class="site-description">{{ tagline }}</p>
         </div>
-        <nav class="site-nav" aria-label="Primary">
-          <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}is-active{% endif %}">Home</a>
-          <a href="{{ '/archive/' | relative_url }}" class="nav-link {% if page.url contains '/archive' %}is-active{% endif %}">Archive</a>
+        <nav class="masthead__nav" aria-label="Primary">
+          <a class="nav-anchor {% if page.url == '/' %}is-active{% endif %}" href="{{ '/' | relative_url }}">Latest</a>
+          <a class="nav-anchor {% if page.url contains '/archive' %}is-active{% endif %}" href="{{ '/archive/' | relative_url }}">Archive</a>
           {%- if site.github_username -%}
-          <a href="https://github.com/{{ site.github_username }}" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+          <a class="nav-anchor" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
           {%- endif -%}
           {%- if site.linkedin_username -%}
-          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="nav-link" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="nav-anchor" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">LinkedIn</a>
           {%- endif -%}
         </nav>
-      </div>
-    </header>
+      </header>
 
-    <main class="site-main" aria-label="Content">
-      <div class="shell">
+      <main class="content" aria-label="Content">
         {{ content }}
-      </div>
-    </main>
+      </main>
 
-    <footer class="site-footer">
-      <div class="shell">
-        <div>
-          <p class="muted">© {{ 'now' | date: '%Y' }} {{ site.title }} · Crafted with Jekyll</p>
-        </div>
+      <footer class="page-footer" role="contentinfo">
+        <p>© {{ 'now' | date: '%Y' }} {{ site.title }} · Built with Jekyll.</p>
         <div class="footer-links">
           {%- if site.email -%}
-          <a href="mailto:{{ site.email }}" class="nav-link">Email</a>
+          <a class="nav-anchor" href="mailto:{{ site.email }}">Email</a>
           {%- endif -%}
           {%- if site.twitter_username -%}
-          <a href="https://twitter.com/{{ site.twitter_username }}" class="nav-link" target="_blank" rel="noopener">Twitter</a>
-          {%- endif -%}
-          {%- if site.linkedin_username -%}
-          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="nav-link" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="nav-anchor" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener">Twitter</a>
           {%- endif -%}
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

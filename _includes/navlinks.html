@@ -1,25 +1,18 @@
-<nav class="post-nav" aria-label="Post navigation">
-  {%- if page.previous -%}
-  <a class="post-nav-item prev" href="{{ page.previous.url | relative_url }}">
+<nav class="essay-nav" aria-label="Post navigation">
+  <div class="essay-nav__item">
     <span class="kicker">Previous</span>
-    <span class="title">{{ page.previous.title }}</span>
-  </a>
-  {%- else -%}
-  <a class="post-nav-item prev" href="{{ '/archive/' | relative_url }}">
-    <span class="kicker">Previous</span>
-    <span class="title">Archive</span>
-  </a>
-  {%- endif -%}
-
-  {%- if page.next -%}
-  <a class="post-nav-item next" href="{{ page.next.url | relative_url }}">
+    {%- if page.previous -%}
+    <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
+    {%- else -%}
+    <a href="{{ '/archive/' | relative_url }}">Archive</a>
+    {%- endif -%}
+  </div>
+  <div class="essay-nav__item">
     <span class="kicker">Next</span>
-    <span class="title">{{ page.next.title }}</span>
-  </a>
-  {%- else -%}
-  <a class="post-nav-item next" href="{{ '/archive/' | relative_url }}">
-    <span class="kicker">Next</span>
-    <span class="title">Archive</span>
-  </a>
-  {%- endif -%}
+    {%- if page.next -%}
+    <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+    {%- else -%}
+    <a href="{{ '/archive/' | relative_url }}">Archive</a>
+    {%- endif -%}
+  </div>
 </nav>

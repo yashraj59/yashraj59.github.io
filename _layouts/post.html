@@ -1,39 +1,33 @@
 ---
 layout: default
 ---
-<article class="single-post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="single-post-meta">
+<article class="essay h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="essay__header">
     <p class="eyebrow">{{ page.date | date: "%B %d, %Y" }}</p>
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <div class="meta-row">
+    <h1 class="essay__title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <div class="essay__meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
       {%- assign author = page.author | default: site.author | default: site.title -%}
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person" class="meta-author">
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person" class="essay__author">
         <span class="p-author h-card" itemprop="name">{{ author }}</span>
       </span>
-      {%- if page.categories and page.categories.size > 0 -%}
-      <span class="meta-tags">
-        {%- for category in page.categories -%}
-        <span class="tag">{{ category }}</span>
-        {%- endfor -%}
-      </span>
-      {%- endif -%}
     </div>
-  </div>
+  </header>
 
-  <div class="single-post-body e-content" itemprop="articleBody">
+  <div class="essay__body e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-  <div class="single-post-share">
-    <p class="eyebrow">Share</p>
-    {% include sharelinks.html %}
+  <div class="essay__footer">
+    <div class="essay__share">
+      <p class="eyebrow">Share</p>
+      {% include sharelinks.html %}
+    </div>
+    {% include navlinks.html %}
   </div>
-
-  {% include navlinks.html %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
