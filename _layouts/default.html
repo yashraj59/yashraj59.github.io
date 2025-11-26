@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+  <body class="site-body">
+    {%- assign tagline = site.description | default: '' | strip -%}
+    {%- if tagline == '' or tagline == '.' -%}
+      {%- assign tagline = 'Notes on AI, art, and the systems I am building.' -%}
+    {%- endif -%}
+
+    <header class="site-header" role="banner">
+      <div class="shell">
+        <div class="brand-block">
+          <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <p class="tagline">{{ tagline }}</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}is-active{% endif %}">Home</a>
+          <a href="{{ '/archive/' | relative_url }}" class="nav-link {% if page.url contains '/archive' %}is-active{% endif %}">Archive</a>
+          {%- if site.github_username -%}
+          <a href="https://github.com/{{ site.github_username }}" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+          {%- endif -%}
+          {%- if site.linkedin_username -%}
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="nav-link" target="_blank" rel="noopener">LinkedIn</a>
+          {%- endif -%}
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main" aria-label="Content">
+      <div class="shell">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <div>
+          <p class="muted">© {{ 'now' | date: '%Y' }} {{ site.title }} · Crafted with Jekyll</p>
+        </div>
+        <div class="footer-links">
+          {%- if site.email -%}
+          <a href="mailto:{{ site.email }}" class="nav-link">Email</a>
+          {%- endif -%}
+          {%- if site.twitter_username -%}
+          <a href="https://twitter.com/{{ site.twitter_username }}" class="nav-link" target="_blank" rel="noopener">Twitter</a>
+          {%- endif -%}
+          {%- if site.linkedin_username -%}
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="nav-link" target="_blank" rel="noopener">LinkedIn</a>
+          {%- endif -%}
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
