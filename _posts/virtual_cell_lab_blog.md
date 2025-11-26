@@ -260,7 +260,7 @@ That is the practical version of the vision. Not an oracle, but a system that le
 
 ## References
 
-All articles retrieved from PubMed. Key references include:
+Key references include:
 
 1. Bunne C, et al. "How to build the virtual cell with artificial intelligence: Priorities and opportunities." *Cell* (2024). [DOI](https://doi.org/10.1016/j.cell.2024.11.015)
 
