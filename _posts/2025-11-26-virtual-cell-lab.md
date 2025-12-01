@@ -4,7 +4,7 @@
 
 ---
 title: "Building a Virtual Cell Lab: Practical AI for Biotech and CDMO Workflows"
-date: 2025-04-01
+date: 2025-11-26
 categories: [biotech, machine-learning, virtual-cell,single-cell, perturb-seq, foundation-models]
 ---
 
