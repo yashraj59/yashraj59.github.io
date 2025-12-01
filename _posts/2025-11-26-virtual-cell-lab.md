@@ -1,7 +1,6 @@
 
 ---
-Categories: biotech, machine-learning, cdmo, virtual-cell  
-Tags: single-cell, perturb-seq, foundation-models, cell-therapy, manufacturing 
+categories: [biotech, machine-learning, cdmo, virtual-cell,single-cell, perturb-seq, foundation-models,cell-therapy]
 ---
 
 # Building a Virtual Cell Lab: Practical AI for Biotech and CDMO Workflows
