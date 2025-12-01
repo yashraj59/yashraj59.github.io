@@ -1,7 +1,8 @@
 ---
 title: "You're Not Falling Behind: Surviving AI Hype in Biotech"
 date: 2025-12-01
-categories: [biotech, machine-learning, virtual-cell,AI]
+categories: [biotech, machine-learning, AI,career, mental-health]  
+tags: [ai-hype, fomo, burnout, anxiety, biotech, machine-learning, career, introvert, wellbeing]
 ---
 
 
