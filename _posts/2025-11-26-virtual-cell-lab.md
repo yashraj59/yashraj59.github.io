@@ -1,6 +1,11 @@
 
+
+
+
 ---
-categories: [biotech, machine-learning, cdmo, virtual-cell,single-cell, perturb-seq, foundation-models,cell-therapy]
+title: "Building a Virtual Cell Lab: Practical AI for Biotech and CDMO Workflows"
+date: 2025-04-01
+categories: [biotech, machine-learning, virtual-cell,single-cell, perturb-seq, foundation-models]
 ---
 
 # Building a Virtual Cell Lab: Practical AI for Biotech and CDMO Workflows
