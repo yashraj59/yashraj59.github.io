@@ -1,7 +1,3 @@
-
-
-
-
 ---
 title: "Building a Virtual Cell Lab: Practical AI for Biotech and CDMO Workflows"
 date: 2025-11-26
