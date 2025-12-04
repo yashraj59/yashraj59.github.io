@@ -8,7 +8,7 @@ tags: [ai-hype, fomo, burnout, anxiety, biotech, machine-learning, career, intro
 
 # You're Not Falling Behind: Surviving AI Hype in Biotech
 
-![](../fig/AIxBio.png)
+![AI and Biotech illustration](/fig/AIxBio.png)
 
 The biotech industry is going through an AI inflection point, and it is intense.
 
