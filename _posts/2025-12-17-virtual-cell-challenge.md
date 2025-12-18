@@ -9,11 +9,13 @@ categories: [AI, virtual-cell, perturbation_modeling]
 
 When Arc Institute announced the winners of the inaugural Virtual Cell Challenge at NeurIPS in December 2025, I wasn't among them. I finished at rank 157 out of over 337 final submissions.
 
+![Validation leaderboard](/fig/vcc.jpeg)
+
 ![Final leaderboard](/fig/vcc2.png)
 
 But here's the thing - I'd been at rank 89 out of 960 teams on the validation leaderboard. Had something working. Then I changed strategies a week before the final deadline and watched my rank drop 68 positions.
 
-![Validation leaderboard](/fig/vcc.jpeg)
+
 
 
 This is that story.
