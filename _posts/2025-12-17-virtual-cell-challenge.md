@@ -1,4 +1,3 @@
-
 ---
 title: "Compute, Confidence, and a Bad Pivot: My Lessons from Arc Institute’s Virtual Cell Challenge 2025"
 date: 2025-12-17
