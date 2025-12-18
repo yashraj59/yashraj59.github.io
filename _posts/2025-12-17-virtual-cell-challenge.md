@@ -180,7 +180,7 @@ Rank 89 to 157 because I changed approach with inadequate validation time. This 
 
 **Competition Accelerates Learning**
 
-I learned more in six weeks of this challenge than I would have in six months of casual exploration. Having a benchmark, a leaderboard, and actual stakes forces discipline and clarity.
+I learned more in eight-ten weeks of this challenge than I would have in six months of casual exploration. Having a benchmark, a leaderboard, and actual stakes forces discipline and clarity.
 
 **Writing This Matters**
 
