@@ -7,10 +7,12 @@ categories: [AI, virtual-cell, perturbation_modeling]
 
 # Compute, Confidence, and a Bad Pivot: My Lessons from Arc Institute’s Virtual Cell Challenge 2025
 
-When Arc Institute announced the winners of the inaugural Virtual Cell Challenge at NeurIPS in December 2025, I wasn't among them. I finished at rank 157 out of over 300 final submissions.
+When Arc Institute announced the winners of the inaugural Virtual Cell Challenge at NeurIPS in December 2025, I wasn't among them. I finished at rank 157 out of over 337 final submissions.
 
+![Final leaderboard](/fig/vcc2.png)
 But here's the thing - I'd been at rank 89 out of 960 teams on the validation leaderboard. Had something working. Then I changed strategies a week before the final deadline and watched my rank drop 68 positions.
 
+![Validation leaderboard](/fig/vcc.jpeg)
 This is that story.
 
 Over 5,000 people from 114 countries registered for the challenge. More than 1,200 teams submitted results. Two $100,000 grand prizes were awarded, split between approaches so different it showed just how unsolved this problem really is.
@@ -199,7 +201,7 @@ And I have a clear picture of what it takes to do state-of-the-art work. Not jus
 
 ## What's Next
 
-I'm taking everything I learned back to FUJIFILM. We work on iPSC quality control and Virtual Cell systems. The general principles I validated - incorporating biological knowledge, careful control handling, strategic loss design - all apply to our production systems.
+I'm taking everything I learned back to FCDI. We work on iPSC. The general principles I validated - incorporating biological knowledge, careful control handling, strategic loss design - all apply to our production systems.
 
 I'm thinking differently about collaboration. Next big challenge, I won't go solo. The team multiplier is real.
 
@@ -229,7 +231,7 @@ I finished at rank 157. I'd been at rank 89 on validation. I made a strategic mi
 
 But I competed. I learned. I built something sophisticated enough to reach rank 89 as a solo participant. I documented the journey honestly - including the screwups.
 
-The challenge was fair. Arc designed it brilliantly. The winners earned their prizes. And I got something different but equally valuable: clarity about where I stand and what I need to get to the next level.
+The challenge felt fair. Arc designed it brilliantly (with a few metric hiccups along the way) and kept listening to community feedback throughout. The winners earned their prizes—and I walked away with something just as valuable: real clarity on where I stand and what I need to reach the next level.
 
 For anyone thinking about entering next year's challenge:
 
