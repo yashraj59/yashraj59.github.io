@@ -22,7 +22,7 @@ This is that story.
 
 Over 5,000 people from 114 countries registered for the challenge. More than 1,200 teams submitted results. Two $100,000 grand prizes were awarded, split between approaches so different it showed just how unsolved this problem really is.
 
-I competed alone. Working evenings and weekends while juggling my day job as a Data Scientist at FUJIFILM Cellular Dynamics. No team to brainstorm with. No institutional compute budget. Just me, my laptop, whatever cloud credits I could afford, and a stubborn belief that I could build something real.
+I competed alone. Working evenings and weekends while juggling my day job as a Data Scientist at a reputed life science company working in stem cell and genomics research. No team to brainstorm with. No institutional compute budget. Just me, my laptop, whatever cloud credits I could afford, and a stubborn belief that I could build something real.
 
 I did build something real. Then I broke it.
 
@@ -206,7 +206,7 @@ And I have a clear picture of what it takes to do state-of-the-art work. Not jus
 
 ## What's Next
 
-I'm taking everything I learned back to FCDI. We work on iPSC. The general principles I validated - incorporating biological knowledge, careful control handling, strategic loss design - all apply to our production systems.
+I'm taking everything I learned back to my work in the stem cell space. The general principles I validated—incorporating biological knowledge, careful control handling, and strategic loss design—translate directly to real-world iPSC workflows.
 
 I'm thinking differently about collaboration. Next big challenge, I won't go solo. The team multiplier is real.
 
