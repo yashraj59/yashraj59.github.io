@@ -27,9 +27,9 @@
   --s-6: 3rem;
   --s-8: 4rem;
 
-  --measure: 66ch;
-  --page: 720px;
-  --rail: 4.5rem;
+  --measure: 70ch;
+  --page: 780px;
+  --rail: 4.75rem;
 
   --t-ink: 180ms;
 
@@ -73,7 +73,7 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; }
 body.site-shell {
   margin: 0;
   font-family: var(--font-serif);
-  font-size: 1.0625rem;       /* 17px */
+  font-size: 1.1875rem;       /* 19px */
   line-height: 1.72;
   color: var(--ink);
   background: var(--bg);
@@ -110,7 +110,20 @@ body.site-shell {
 }
 
 /* ---------- Links ---------- */
-a { color: var(--accent); text-decoration: none; }
+a, a:visited { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: none; }
+
+/* Beat minima's a:visited / a:hover (higher specificity) so our colors hold */
+.nav-anchor:visited { color: var(--muted); }
+.nav-anchor:hover, .nav-anchor.is-active, .nav-anchor.is-active:visited { color: var(--ink); }
+.plain-link:visited { color: var(--muted); }
+.plain-link:hover { color: var(--accent); }
+.issue-row a:visited { color: inherit; }
+.timeline__item:visited { color: var(--ink); }
+.share-link:visited { color: var(--ink); }
+.essay-nav a:visited { color: var(--ink); }
+.essay__body a:visited { color: var(--accent); }
+.site-title:visited { color: var(--ink); }
 
 /* Animated ink underline for nav / titles / standalone links */
 .inklink {
@@ -160,7 +173,7 @@ a { color: var(--accent); text-decoration: none; }
 
 .site-title {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--ink);
@@ -170,7 +183,7 @@ a { color: var(--accent); text-decoration: none; }
   margin: 0;
   font-style: italic;
   color: var(--muted);
-  font-size: 1.0625rem;
+  font-size: 1.15rem;
   max-width: 42ch;
 }
 
@@ -236,16 +249,16 @@ a { color: var(--accent); text-decoration: none; }
 .intro__title {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: clamp(2.1rem, 4.2vw, 2.9rem);
-  line-height: 1.14;
-  letter-spacing: -0.008em;
+  font-size: clamp(2.4rem, 4.8vw, 3.4rem);
+  line-height: 1.13;
+  letter-spacing: -0.01em;
   margin: 0 0 var(--s-3);
   max-width: 20ch;
 }
 
 .intro__lede {
   margin: 0;
-  font-size: 1.28rem;
+  font-size: 1.4rem;
   line-height: 1.55;
   color: var(--muted);
   max-width: 60ch;
@@ -315,7 +328,7 @@ a { color: var(--accent); text-decoration: none; }
   margin: 0 0 0.3rem;
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.62rem;
   line-height: 1.25;
   letter-spacing: -0.006em;
   color: var(--ink);
@@ -329,7 +342,7 @@ a { color: var(--accent); text-decoration: none; }
 .issue-dek {
   margin: 0.4rem 0 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.08rem;
   line-height: 1.55;
 }
 
@@ -417,9 +430,9 @@ a { color: var(--accent); text-decoration: none; }
 .essay__title {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: clamp(2.5rem, 5vw, 3.4rem);
-  line-height: 1.1;
-  letter-spacing: -0.011em;
+  font-size: clamp(2.7rem, 5.4vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -0.013em;
   margin: 0;
   color: var(--ink);
 }
@@ -455,8 +468,8 @@ a { color: var(--accent); text-decoration: none; }
 .essay__body {
   counter-reset: sec;
   padding: var(--s-2) 0 var(--s-5);
-  font-size: 1.0625rem;
-  line-height: 1.72;
+  font-size: 1.1875rem;
+  line-height: 1.74;
   max-width: var(--measure);
   font-feature-settings: 'kern' 1, 'liga' 1, 'lnum' 1;
 }
@@ -468,8 +481,8 @@ a { color: var(--accent); text-decoration: none; }
   position: relative;
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.22;
+  font-size: 1.95rem;
+  line-height: 1.2;
   letter-spacing: -0.006em;
   margin: var(--s-6) 0 var(--s-2);
   padding-top: var(--s-3);
@@ -490,7 +503,7 @@ a { color: var(--accent); text-decoration: none; }
 .essay__body h3 {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 1.22rem;
+  font-size: 1.32rem;
   line-height: 1.3;
   margin: var(--s-4) 0 var(--s-1);
 }
