@@ -6,6 +6,7 @@
     {%- assign tagline = 'Writing quietly about AI, art, and the systems I am building.' -%}
   {%- endif -%}
   <body class="site-shell">
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="page-frame">
       <header class="masthead" role="banner">
         <div class="masthead__brand">
@@ -24,15 +25,21 @@
         </nav>
       </header>
 
-      <main class="content" aria-label="Content">
+      <main class="content" id="main" aria-label="Content">
         {{ content }}
       </main>
 
       <footer class="page-footer" role="contentinfo">
-        <p>© {{ 'now' | date: '%Y' }} {{ site.title }} · Built with Jekyll.</p>
+        <p>© {{ 'now' | date: '%Y' }} {{ site.title }} · Built with Jekyll</p>
         <div class="footer-links">
           {%- if site.email -%}
           <a class="nav-anchor" href="mailto:{{ site.email }}">Email</a>
+          {%- endif -%}
+          {%- if site.github_username -%}
+          <a class="nav-anchor" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+          {%- endif -%}
+          {%- if site.linkedin_username -%}
+          <a class="nav-anchor" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">LinkedIn</a>
           {%- endif -%}
           {%- if site.twitter_username -%}
           <a class="nav-anchor" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener">Twitter</a>

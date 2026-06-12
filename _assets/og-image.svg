@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Yash Raj — Field notes">
+  <rect width="1200" height="630" fill="#f4f1e9"/>
+  <!-- top hairline rail -->
+  <line x1="90" y1="110" x2="1110" y2="110" stroke="#ddd7c9" stroke-width="1"/>
+  <text x="90" y="98" fill="#645f54" font-family="'IBM Plex Mono', Menlo, monospace" font-size="22" letter-spacing="6">FIELD NOTES</text>
+  <text x="1110" y="98" fill="#8a8475" font-family="'IBM Plex Mono', Menlo, monospace" font-size="22" letter-spacing="4" text-anchor="end">yraj.in</text>
+
+  <!-- wordmark -->
+  <text x="88" y="320" fill="#1a1714" font-family="Georgia, 'Times New Roman', serif" font-size="132" font-weight="700" letter-spacing="-2">Yash Raj</text>
+
+  <!-- oxblood rule -->
+  <rect x="92" y="360" width="96" height="3" fill="#9c3b2e"/>
+
+  <!-- tagline -->
+  <text x="90" y="430" fill="#645f54" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="38">Writing quietly about AI, art, and the systems I am building.</text>
+
+  <!-- numbering motif -->
+  <text x="90" y="560" fill="#9c3b2e" font-family="'IBM Plex Mono', Menlo, monospace" font-size="24" letter-spacing="3">No. 03</text>
+  <text x="230" y="560" fill="#c8c1b0" font-family="'IBM Plex Mono', Menlo, monospace" font-size="24" letter-spacing="3">No. 02</text>
+  <text x="370" y="560" fill="#ddd7c9" font-family="'IBM Plex Mono', Menlo, monospace" font-size="24" letter-spacing="3">No. 01</text>
+  <line x1="90" y1="585" x2="1110" y2="585" stroke="#ddd7c9" stroke-width="1"/>
+</svg>

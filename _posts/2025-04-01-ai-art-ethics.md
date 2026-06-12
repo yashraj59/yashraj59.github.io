@@ -2,6 +2,7 @@
 title: "AI Art, Ethics, and Why We Should All Chill a Bit"
 date: 2025-04-01
 categories: [AI, Art, Ethics, Technology]
+description: "Why I think the outrage over AI-generated art misses the point, and what the history of photography and digital art can teach us about it."
 ---
 
 Recently, there's been intense debate around AI-generated art, particularly concerning works inspired by beloved styles such as Studio Ghibli's. Passionate opinions are expected, but the ethical outrage often misses the fundamental purpose of artificial intelligence: making creativity accessible.

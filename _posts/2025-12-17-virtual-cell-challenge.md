@@ -2,10 +2,8 @@
 title: "Compute, Confidence, and a Bad Pivot: My Lessons from Arc Institute’s Virtual Cell Challenge 2025"
 date: 2025-12-17
 categories: [AI, virtual-cell, perturbation-modeling, single-cell]
+description: "An honest post-mortem of finishing rank 157 in Arc Institute's Virtual Cell Challenge after sitting at rank 89, and the last-minute pivot that cost me."
 ---
-
-
-# Compute, Confidence, and a Bad Pivot: My Lessons from Arc Institute’s Virtual Cell Challenge 2025
 
 When Arc Institute announced the winners of the inaugural Virtual Cell Challenge at NeurIPS in December 2025, I wasn't among them. I finished at rank 157 out of over 337 final submissions.
 

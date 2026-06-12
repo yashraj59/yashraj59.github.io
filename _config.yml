@@ -1,6 +1,8 @@
 title: "Yash Raj"
-author: ""
-description: "."
+author: "Yash Raj"
+description: "Writing quietly about AI, art, and the systems I am building."
+url: "https://yraj.in"
+lang: "en"
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -37,6 +39,11 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
+    values:
+      image: "/fig/og-image.png"
+  - scope:
+      path: ""
       type: post
     values:
+      layout: post
       tags: Other

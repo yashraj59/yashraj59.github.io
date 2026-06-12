@@ -3,12 +3,13 @@ title: "You're Not Falling Behind: Surviving AI Hype in Biotech"
 date: 2025-12-01
 categories: [biotech, machine-learning, AI,career, mental-health]  
 tags: [ai-hype, fomo, burnout, anxiety, biotech, machine-learning, career, introvert, wellbeing]
+description: "Notes on the mental load of working near AI and biology, and a few honest habits I use to stay grounded when the field moves fast."
 ---
 
-
-# You're Not Falling Behind: Surviving AI Hype in Biotech
-
-![AI and Biotech illustration](/fig/AIxBio.png)
+<picture>
+  <source srcset="/fig/AIxBio.webp" type="image/webp">
+  <img src="/fig/AIxBio.jpg" alt="A researcher at a desk surrounded by floating screens of AI news, preprints, and protein structures" width="1600" height="872">
+</picture>
 
 The biotech industry is going through an AI inflection point, and it is intense.
 

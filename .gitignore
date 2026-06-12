@@ -1,1 +1,11 @@
-﻿_site
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+
+# Local dev / preview tooling (not needed for GitHub Pages)
+vendor
+.bundle
+Gemfile.lock
+serve.sh
+.claude
