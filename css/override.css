@@ -595,9 +595,6 @@ img, video {
   /* allow wide screenshots to breathe out to the page edge */
   max-width: 100%;
 }
-@media (min-width: 720px) {
-  .essay__body p img { max-width: var(--page); }
-}
 
 figure { margin: var(--s-5) auto; text-align: center; }
 figure img { margin: 0 auto var(--s-2); }
@@ -713,15 +710,8 @@ pre code { background: none; padding: 0; }
   .essay__body {
     padding-left: var(--rail);
     border-left: 1px solid var(--stroke);
-    max-width: var(--feature);
+    max-width: calc(var(--measure) + var(--rail));
   }
-  /* Keep reading text at a comfortable measure; let media use the full column */
-  .essay__body > * { max-width: var(--measure); }
-  .essay__body > p:has(img),
-  .essay__body > p:has(picture),
-  .essay__body > figure,
-  .essay__body > .embed-container,
-  .essay__body > pre { max-width: none; }
   .essay__body h2 {
     border-top: 1px solid var(--stroke);
   }
