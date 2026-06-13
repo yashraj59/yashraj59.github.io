@@ -27,9 +27,10 @@
   --s-6: 3rem;
   --s-8: 4rem;
 
-  --measure: 70ch;
-  --page: 780px;
-  --rail: 4.75rem;
+  --measure: 72ch;          /* reading width for article body */
+  --page: 1200px;           /* wide outer container (masthead, index, archive) */
+  --feature: 60rem;         /* post article column (~960px): big header + figures */
+  --rail: 5rem;
 
   --t-ink: 180ms;
 
@@ -152,7 +153,7 @@ a:hover { text-decoration: none; }
 
 /* ---------- Page frame ---------- */
 .page-frame {
-  width: min(var(--page), calc(100% - 3rem));
+  width: min(var(--page), calc(100% - 5rem));
   margin: 0 auto;
   padding-bottom: var(--s-8);
   min-height: 100vh;
@@ -239,29 +240,43 @@ a:hover { text-decoration: none; }
   margin: 0 0 var(--s-2);
 }
 
-/* ---------- Index: standfirst ---------- */
+/* ---------- Index: standfirst (magazine hero) ---------- */
 .intro {
-  padding: var(--s-3) 0 var(--s-6);
+  padding: var(--s-4) 0 var(--s-6);
   border-bottom: 1px solid var(--stroke);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s-4);
 }
-.intro--tight { padding-bottom: var(--s-4); }
+.intro--tight { display: block; padding-bottom: var(--s-4); }
+
+.intro__head { min-width: 0; }
 
 .intro__title {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: clamp(2.4rem, 4.8vw, 3.4rem);
-  line-height: 1.13;
-  letter-spacing: -0.01em;
-  margin: 0 0 var(--s-3);
-  max-width: 20ch;
+  font-size: clamp(2.6rem, 5.6vw, 4.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.013em;
+  margin: 0;
+  text-wrap: balance;
 }
+.intro__head .eyebrow { margin-bottom: var(--s-2); }
 
 .intro__lede {
   margin: 0;
   font-size: 1.4rem;
-  line-height: 1.55;
+  line-height: 1.5;
   color: var(--muted);
-  max-width: 60ch;
+  max-width: 46ch;
+}
+
+@media (min-width: 900px) {
+  .intro:not(.intro--tight) {
+    grid-template-columns: 1.55fr 1fr;
+    gap: var(--s-8);
+    align-items: end;
+  }
 }
 
 /* ---------- Index: issue list ---------- */
@@ -300,11 +315,25 @@ a:hover { text-decoration: none; }
 
 .issue-row a {
   display: grid;
-  grid-template-columns: 6.5rem 1fr;
-  gap: 0.5rem 1.5rem;
-  padding: var(--s-3) 0;
+  grid-template-columns: 8rem 1fr;
+  gap: 0.5rem 2rem;
+  padding: var(--s-4) 0;
   color: inherit;
   align-items: baseline;
+}
+
+.issue-row__main { min-width: 0; }
+
+@media (min-width: 1000px) {
+  .issue-row a { grid-template-columns: 9rem 1fr; gap: 2.5rem; }
+  .issue-row__main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.15fr);
+    gap: 2.5rem;
+    align-items: baseline;
+  }
+  .issue-row__main .issue-title { margin-bottom: 0; }
+  .issue-row__main .issue-dek { margin-top: 0; }
 }
 
 .issue-row__rail {
@@ -328,8 +357,8 @@ a:hover { text-decoration: none; }
   margin: 0 0 0.3rem;
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 1.62rem;
-  line-height: 1.25;
+  font-size: 1.72rem;
+  line-height: 1.22;
   letter-spacing: -0.006em;
   color: var(--ink);
   display: inline;
@@ -354,9 +383,9 @@ a:hover { text-decoration: none; }
 
 .timeline__year {
   display: grid;
-  grid-template-columns: 6.5rem 1fr;
-  gap: 1.5rem;
-  padding: var(--s-4) 0;
+  grid-template-columns: 9rem 1fr;
+  gap: 2.5rem;
+  padding: var(--s-5) 0;
   border-top: 1px solid var(--stroke);
 }
 .timeline__year:last-child { border-bottom: 1px solid var(--stroke); }
@@ -364,7 +393,7 @@ a:hover { text-decoration: none; }
 .timeline__marker {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: var(--muted);
   font-feature-settings: 'onum' 1;
   line-height: 1.1;
@@ -374,9 +403,9 @@ a:hover { text-decoration: none; }
 
 .timeline__item {
   display: grid;
-  grid-template-columns: 6.5rem 1fr;
-  gap: 1.25rem;
-  padding: 0.55rem 0;
+  grid-template-columns: 8rem 1fr;
+  gap: 2rem;
+  padding: 0.7rem 0;
   align-items: baseline;
   color: var(--ink);
   border-bottom: 1px solid transparent;
@@ -390,7 +419,7 @@ a:hover { text-decoration: none; }
 }
 .timeline__title {
   font-family: var(--font-serif);
-  font-size: 1.12rem;
+  font-size: 1.22rem;
   line-height: 1.4;
   display: inline;
   background-image: linear-gradient(var(--accent), var(--accent));
@@ -405,7 +434,7 @@ a:hover { text-decoration: none; }
 /* ---------- Post (essay) ---------- */
 .essay {
   margin: 0 auto;
-  max-width: var(--page);
+  max-width: var(--feature);
 }
 
 .essay__header { padding-bottom: var(--s-4); }
@@ -625,7 +654,7 @@ pre code { background: none; padding: 0; }
   display: flex;
   flex-direction: column;
   gap: var(--s-4);
-  max-width: var(--page);
+  max-width: var(--feature);
   margin: 0 auto;
 }
 
@@ -684,8 +713,15 @@ pre code { background: none; padding: 0; }
   .essay__body {
     padding-left: var(--rail);
     border-left: 1px solid var(--stroke);
-    max-width: calc(var(--measure) + var(--rail));
+    max-width: var(--feature);
   }
+  /* Keep reading text at a comfortable measure; let media use the full column */
+  .essay__body > * { max-width: var(--measure); }
+  .essay__body > p:has(img),
+  .essay__body > p:has(picture),
+  .essay__body > figure,
+  .essay__body > .embed-container,
+  .essay__body > pre { max-width: none; }
   .essay__body h2 {
     border-top: 1px solid var(--stroke);
   }

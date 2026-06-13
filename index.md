@@ -4,8 +4,10 @@ title: Home
 ---
 
 <section class="intro">
-  <p class="eyebrow">Field notes</p>
-  <h1 class="intro__title">Calm observations on AI, creative work, and the tools I ship.</h1>
+  <div class="intro__head">
+    <p class="eyebrow">Field notes</p>
+    <h1 class="intro__title">Calm observations on AI, creative work, and the tools I ship.</h1>
+  </div>
   <p class="intro__lede">I am Yash Raj. I prefer quiet interfaces, practical experiments, and essays that can be read in one sitting. This site is where I document the work so it stays useful for others.</p>
 </section>
 
