@@ -6,7 +6,7 @@ author: "Yash Raj"
 categories: [AI, virtual-cell, CRISPRi, single-cell]
 ---
 
-As of September 12, the Arc Institute Virtual Cell Challenge 2026 leaderboard reads: Team 42, rank 114 of 920 teams. The task is simple to say and hard to do: silence one gene in a cell and predict what the whole cell does next, in cell lines nobody has ever seen perturbed. This note is about what our number means, the first study we can share, and the road to November.
+As of September 13, the Arc Institute Virtual Cell Challenge 2026 leaderboard reads: Team 42, rank 106 of 933 teams. The task is simple to say and hard to do: silence one gene in a cell and predict what the whole cell does next, in cell lines nobody has ever seen perturbed. This note is about what our number means, the first study we can share, and the road to November.
 
 Team 42 is [Linhui Xie](https://www.linkedin.com/in/linhui-xie/), [Yurui Chen](https://www.linkedin.com/in/matcyr96/), Yuxuan Hu, and [me](https://www.linkedin.com/in/yashraj59/). What we are building stays with us until the race ends. What we have learned along the way is worth sharing now.
 
@@ -26,9 +26,9 @@ Both editions use a 300-gene panel. In 2025 everything happened inside one cell 
 
 ## Where we stand
 
-Every entry is scored between two anchors. Zero means no better than giving one average answer for every question. One means matching a rerun of the real experiment. As of September 12, we score 0.1459 and the top team scores 0.2629. No team we can see is anywhere close to one. Studies published last year found that deep learning models on this problem often fail to beat simple linear baselines, and the leaderboard agrees. The whole field, the largest models included, is still far from the center. That is not a reason to stay out. It is the reason the problem deserves the effort.
+Every entry is scored between two anchors. Zero means no better than giving one average answer for every question. One means matching a rerun of the real experiment. As of September 13, we score 0.1511 and the top team scores 0.2629. No team we can see is anywhere close to one. Studies published last year found that deep learning models on this problem often fail to beat simple linear baselines, and the leaderboard agrees. The whole field, the largest models included, is still far from the center. That is not a reason to stay out. It is the reason the problem deserves the effort.
 
-![A target diagram where the bullseye represents matching a rerun of the experiment and the outer edge represents predicting one average answer, with Team 42 at 0.1459 and the top team at 0.2629](/fig/vcc-2026-team42/fig2_target.png)
+![A target diagram where the bullseye represents matching a rerun of the experiment and the outer edge represents predicting one average answer, with Team 42 at 0.1511 and the top team at 0.2629](/fig/vcc-2026-team42/fig2_target.png)
 *The center is a rerun of the experiment. The outer edge is one average answer for everything. The whole field, us included, is still near the edge.*
 
 ## Naming the mystery cells
@@ -49,5 +49,5 @@ Three habits the challenge rewards, in one breath: predictions are populations, 
 
 The public leaderboard runs through October 22. Then the three final cell lines are released, entries close November 5, and the official ranking comes from those alone. We will write the post-mortem either way.
 
-![Timeline from the August 20 launch through the September 12 update at rank 114 of 920 teams and overall score 0.1459, to the October 22 leaderboard close and the November 5 final entry deadline](/fig/vcc-2026-team42/fig5_road.png)
+![Timeline from the August 20 launch through the September 13 update at rank 106 of 933 teams and overall score 0.1511, to the October 22 leaderboard close and the November 5 final entry deadline](/fig/vcc-2026-team42/fig5_road.png)
 *The solid part of the road is behind us. Everything that decides the official ranking is still ahead.*
