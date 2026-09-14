@@ -28,7 +28,10 @@ Both editions use a 300-gene panel. In 2025 everything happened inside one cell 
 
 Every entry is scored between two anchors. Zero means no better than giving one average answer for every question. One means matching a rerun of the real experiment. As of September 13, we score 0.1511 and the top team scores 0.2629. No team we can see is anywhere close to one. Studies published last year found that deep learning models on this problem often fail to beat simple linear baselines, and the leaderboard agrees. The whole field, the largest models included, is still far from the center. That is not a reason to stay out. It is the reason the problem deserves the effort.
 
-![A target diagram where the bullseye represents matching a rerun of the experiment and the outer edge represents predicting one average answer, with Team 42 at 0.1511 and the top team at 0.2629](/fig/vcc-2026-team42/fig2_target.png)
+<div class="vcc-theme-figure" role="img" aria-label="A target diagram where the bullseye represents matching a rerun of the experiment and the outer edge represents predicting one average answer, with Team 42 at 0.1511 and the top team at 0.2629">
+  <img class="vcc-theme-figure__light" src="/fig/vcc-2026-team42/fig2_target.png" alt="">
+  <img class="vcc-theme-figure__dark" src="/fig/vcc-2026-team42/fig2_target_dark.png" alt="">
+</div>
 *The center is a rerun of the experiment. The outer edge is one average answer for everything. The whole field, us included, is still near the edge.*
 
 ## Naming the mystery cells
@@ -49,5 +52,8 @@ Three habits the challenge rewards, in one breath: predictions are populations, 
 
 The public leaderboard runs through October 22. Then the three final cell lines are released, entries close November 5, and the official ranking comes from those alone. We will write the post-mortem either way.
 
-![Timeline from the August 20 launch through the September 13 update at rank 106 of 933 teams and overall score 0.1511, to the October 22 leaderboard close and the November 5 final entry deadline](/fig/vcc-2026-team42/fig5_road.png)
+<div class="vcc-theme-figure" role="img" aria-label="Timeline from the August 20 launch through the September 13 update at rank 106 of 933 teams and overall score 0.1511, to the October 22 leaderboard close and the November 5 final entry deadline">
+  <img class="vcc-theme-figure__light" src="/fig/vcc-2026-team42/fig5_road.png" alt="">
+  <img class="vcc-theme-figure__dark" src="/fig/vcc-2026-team42/fig5_road_dark.png" alt="">
+</div>
 *The solid part of the road is behind us. Everything that decides the official ranking is still ahead.*
